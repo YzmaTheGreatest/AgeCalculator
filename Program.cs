@@ -14,7 +14,7 @@ namespace Pikachu
                  int birthmonth;
                  int birthyear;
                  int years;
-                 int birthyearv;
+                 int leapyear;
                  int date = Convert.ToInt32(thisday.ToString("dd"));
                  int month = Convert.ToInt32(thisday.ToString("MM"));
                  int year = Convert.ToInt32(thisday.ToString("yyyy"));
@@ -75,11 +75,11 @@ namespace Pikachu
                            Console.WriteLine("Ты меня обманул/а");
                            System.Environment.Exit(0);
                    }
-                birthyearv = birthyear % 4;
+                leapyear = birthyear % 4;
                 switch (birthmonth)
                 {
                     case 2:
-                        if (birthyearv == 0)
+                        if (leapyear == 0)
                         {
                             if (birthday <= 29)
                             {
