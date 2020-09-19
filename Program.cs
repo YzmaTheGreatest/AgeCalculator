@@ -121,20 +121,20 @@ namespace Pikachu
                 years = year - birthyear;
                 if (years == 0)
                 {
-                    Console.WriteLine("Так значит тебе {0} годиков, хи-хи-хи, приятно познакомится, {1}", years, name);
+                    Console.WriteLine("Так значит тебе {0} годиков, приятно познакомится, {1}", years, name);
                 }
                 else if (years >= 1 && birthmonth < month)
                 {
-                    Console.WriteLine("Так значит тебе {0} годиков, хи-хи-хи, приятно познакомится, {1}", years, name);
+                    Console.WriteLine("Так значит тебе {0} годиков, приятно познакомится, {1}", years, name);
                 }
                 else if (years >= 1 && birthmonth == month && birthday <= date)
                 {
-                    Console.WriteLine("Так значит тебе {0} годиков, хи-хи-хи, приятно познакомится, {1}", years, name);
+                    Console.WriteLine("Так значит тебе {0} годиков, приятно познакомится, {1}", years, name);
                 }
                 else
                 {
                     years = years - 1;
-                    Console.WriteLine("Так значит тебе {0} годиков, хи-хи-хи, приятно познакомится, {1}", years, name);
+                    Console.WriteLine("Так значит тебе {0} годиков, приятно познакомится, {1}", years, name);
                 }
             }
             catch (Exception)
